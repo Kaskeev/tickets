@@ -1,17 +1,19 @@
-
-
-  {
-    "manifest_version": 2,
-  
-    "name": "Closer",
-    "description": "Send Ticket on Gmail",
-    "version": "1.0",
-  
-    "browser_action": {
-     "default_icon": "closer.png",
-     "default_popup": "index.html"
-    },
-    "permissions": [
-     "activeTab"
-     ]
-  }
+{
+  "manifest_version": 3,
+  "name": "Closer",
+  "description": "Send Ticket on Gmail",  
+  "browser_action": {
+   "default_icon": "Closer.png",  
+   "default_popup": "index.html"
+  },
+   "permissions": [
+    "alarms",
+    "tabs",
+    "webNavigation",
+    "*://*.google.com/"
+   ],
+   "icons": {
+    "128": "Closer.png"
+  },
+  "version": "4.4.0"
+}
